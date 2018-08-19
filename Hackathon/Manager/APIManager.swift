@@ -8,10 +8,12 @@
 
 import Foundation
 
+let API: String = "http://192.168.25.43:3000"
+
 class APIManager {
     
     static func getExperiences(completion: @escaping ([Experience]?, Errors?) -> Void) {
-        AlamofireService.getJsonFromHttp(url: "http://192.168.25.43:3000/experiences/") { (json, error) in
+        AlamofireService.getJsonFromHttp(endpoint:"\(API)/experiences/") { (json, error) in
             if (error != nil) {
                 completion(nil, error)
                 return
@@ -28,7 +30,7 @@ class APIManager {
     }
     
     static func getHomeDetails(completion: @escaping ([String: Any]?, Errors?) -> Void) {
-        AlamofireService.getJsonFromHttp(url: "http://192.168.25.43:3000/home/") { (json, error) in
+        AlamofireService.getJsonFromHttp(url: "\(API)/home/") { (json, error) in
             if error != nil {
                 completion(nil, error)
                 return
@@ -38,6 +40,25 @@ class APIManager {
                 return
             }
             completion(result, nil)
+
+    static func getAvailabilities(completion: @escaping ([Availability]?, Errors?) -> Void) {
+        AlamofireService.getJsonFromHttp(endpoint:"\(API)/home/") { (json, error) in
+            if (error != nil) {
+                completion(nil, error)
+                return
+            }
+            guard let resultDict = json as? [String: Any] else {
+                completion(nil, .JsonParseError)
+                return
+            }
+            let highlights = resultDict["highlights"] as! [[String: Any]]
+            let first = highlights[0] as! [String: Any]
+            let result = first["availability"] as! [[String: Any] ]
+            let availabilities = result.map({ (element) in
+                return Availability(json: element as! [String : Any])
+            })
+            
+            completion(availabilities, nil)
         }
     }
     

@@ -10,26 +10,34 @@ import UIKit
 
 class DateTableViewCell: UITableViewCell {
     
-    
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var local: UILabel!
-    @IBOutlet weak var thumb: UIImageView!
-    @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var dateRoundedView: UIView!
+    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var hourLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.thumb.layer.cornerRadius = 10
-        self.thumb.clipsToBounds = true
-        self.thumb.layer.borderWidth = 3
+        dateRoundedView.setCorner(radius: 10, borderColorHex:"#ECECEC")
     }
     
-//    func populateCell(booking: Booking){
-//        
-//        title.text = experience.title
-//        local.text = "Onde: \(experience.city),\(experience.state)"
-//        price.text = String(format: "R$ %.02f por pessoa", experience.price)
-//        thumb.load(url: "https://st.depositphotos.com/1226177/4047/v/950/depositphotos_40477545-stock-illustration-pop-art-comic-speech-bubble.jpg")
-//    }
+    func populateCell(data: Availability){
+        monthLabel.text = data.month
+        dateLabel.text = "\(data.day)"
+        hourLabel.text = data.period
+    }
+     
+    func setSelected(selected: Bool){
+        if selected {
+            dateRoundedView.backgroundColor = UIColor(hexString: "#FF9600")
+            monthLabel.textColor = .white
+            dateLabel.textColor = .white
+        } else {
+            dateRoundedView.backgroundColor = UIColor.clear
+            monthLabel.textColor = UIColor(hexString: "#4A4A4A")
+            dateLabel.textColor = UIColor(hexString: "#FF9600")
+        }
+    }
+    
 }
 
 

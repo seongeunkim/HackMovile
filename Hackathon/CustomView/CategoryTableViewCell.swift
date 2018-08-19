@@ -18,9 +18,6 @@ class CategoryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.thumb.layer.cornerRadius = 10
-        self.thumb.clipsToBounds = true
-        self.thumb.layer.borderWidth = 3
     }
     
     func populateCell(experience: Experience){
