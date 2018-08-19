@@ -10,6 +10,7 @@ import UIKit
 
 class ProductDetailsViewController: UIViewController {
     
+    @IBOutlet weak var reserveButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
@@ -25,11 +26,16 @@ class ProductDetailsViewController: UIViewController {
         self.setUIElements()
     }
     
+    override func awakeFromNib() {
+        
+    }
+    
     func setUIElements() {
         self.nameLabel.text = self.selectedExperience?.title
         self.priceLabel.text = self.selectedExperience?.price
         self.descriptionLabel.text = self.selectedExperience?.description
         self.experienceImage.load(url: (self.selectedExperience?.image)!)
+    self.reserveButton.setCorner(radius: 20, borderColorHex: nil)
     }
 
 }

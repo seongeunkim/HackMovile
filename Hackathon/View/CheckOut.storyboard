@@ -132,6 +132,12 @@
                                             <constraint firstAttribute="width" constant="12" id="RIa-Fd-e7y"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finalizar reserva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPD-ut-nZ5">
+                                        <rect key="frame" x="120" y="28" width="135" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -140,7 +146,10 @@
                                     <constraint firstItem="vEN-l4-cHR" firstAttribute="leading" secondItem="oom-My-f2W" secondAttribute="leading" constant="83" id="Cyd-SH-KAB"/>
                                     <constraint firstAttribute="bottom" secondItem="MCz-zS-iWO" secondAttribute="bottom" constant="14" id="Gf0-mQ-XrQ"/>
                                     <constraint firstItem="vEN-l4-cHR" firstAttribute="centerY" secondItem="Xf3-6h-KVY" secondAttribute="centerY" id="Mty-kT-ysU"/>
+                                    <constraint firstItem="GPD-ut-nZ5" firstAttribute="centerX" secondItem="oom-My-f2W" secondAttribute="centerX" id="Oq2-7l-4nO"/>
+                                    <constraint firstItem="GPD-ut-nZ5" firstAttribute="top" secondItem="oom-My-f2W" secondAttribute="top" constant="28" id="VlJ-j0-Edy"/>
                                     <constraint firstAttribute="trailing" secondItem="SEz-h8-mf7" secondAttribute="trailing" constant="19" id="XWS-Xc-zfv"/>
+                                    <constraint firstItem="vEN-l4-cHR" firstAttribute="top" secondItem="GPD-ut-nZ5" secondAttribute="bottom" constant="33" id="di7-a6-744"/>
                                     <constraint firstAttribute="trailing" secondItem="MCz-zS-iWO" secondAttribute="trailing" constant="71" id="fGr-I8-Jjc"/>
                                     <constraint firstItem="SEz-h8-mf7" firstAttribute="top" secondItem="oom-My-f2W" secondAttribute="top" constant="86" id="pfi-Oq-1xA"/>
                                     <constraint firstItem="Xf3-6h-KVY" firstAttribute="leading" secondItem="oom-My-f2W" secondAttribute="leading" constant="24" id="tQb-Pf-Q4T"/>
@@ -215,7 +224,7 @@
                                     <color key="titleColor" red="1" green="0.58823529411764708" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToHome:" destination="V6C-yt-dfi" eventType="touchUpInside" id="E7h-Sy-Z7W"/>
+                                    <segue destination="fYE-0b-3Ky" kind="show" id="e5y-hE-nHB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Obrigado(a) por reservar sua próxima experiência incrível!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAc-0j-paE">
@@ -249,13 +258,19 @@
                     </view>
                     <connections>
                         <outlet property="okButton" destination="IGV-sR-GqA" id="fZw-4L-dZU"/>
-                        <segue destination="vWD-YZ-xZq" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="JhB-9K-dMp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3Z-Cx-dz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="vWD-YZ-xZq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1029.5999999999999" y="135.38230884557723"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="ud8-mU-169">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="fYE-0b-3Ky" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBf-6P-hgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="71"/>
         </scene>
     </scenes>
     <resources>

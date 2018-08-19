@@ -17,13 +17,6 @@ class SuccessController: UIViewController {
         super.viewDidLoad()
         okButton.setCorner(radius: 20, borderColorHex: nil)
     }
-    
-    @IBAction func goToHome(_ sender: Any) {
-        performSegue(withIdentifier: "GoToHome", sender: self)
-    }
+
 }
 
-extension HomeViewController {
-    @IBAction func unwindToHome(segue: UIStoryboardSegue){
-    }
-}

@@ -16,6 +16,11 @@
 		12ACF90C2129531500314F7F /* ProductDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12ACF90B2129531500314F7F /* ProductDetails.storyboard */; };
 		12ACF90E2129593000314F7F /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF90D2129593000314F7F /* ProductDetailsViewController.swift */; };
 		12ACF91021296A2900314F7F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF90F21296A2900314F7F /* UIImageView.swift */; };
+		12ACF9122129A4A400314F7F /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF9112129A4A400314F7F /* Availability.swift */; };
+		12ACF9142129A4DB00314F7F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF9132129A4DB00314F7F /* UIView.swift */; };
+		12ACF9162129A5E800314F7F /* CheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12ACF9152129A5E800314F7F /* CheckOut.storyboard */; };
+		12ACF9182129A85B00314F7F /* CheckOutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF9172129A85B00314F7F /* CheckOutController.swift */; };
+		12ACF91A2129A93D00314F7F /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF9192129A93C00314F7F /* SuccessController.swift */; };
 		12CBDADB2128ED920027B13B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CBDADA2128ED920027B13B /* AppDelegate.swift */; };
 		12CBDAE02128ED920027B13B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CBDADE2128ED920027B13B /* Home.storyboard */; };
 		12CBDAE32128ED920027B13B /* Hackathon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12CBDAE12128ED920027B13B /* Hackathon.xcdatamodeld */; };
@@ -41,6 +46,11 @@
 		12ACF90B2129531500314F7F /* ProductDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetails.storyboard; sourceTree = "<group>"; };
 		12ACF90D2129593000314F7F /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		12ACF90F21296A2900314F7F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		12ACF9112129A4A400314F7F /* Availability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Availability.swift; path = /Users/seongeunkim/Desktop/HackMovile/Hackathon/Model/Availability.swift; sourceTree = "<absolute>"; };
+		12ACF9132129A4DB00314F7F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		12ACF9152129A5E800314F7F /* CheckOut.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CheckOut.storyboard; sourceTree = "<group>"; };
+		12ACF9172129A85B00314F7F /* CheckOutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckOutController.swift; sourceTree = "<group>"; };
+		12ACF9192129A93C00314F7F /* SuccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
 		12CBDAD72128ED920027B13B /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CBDADA2128ED920027B13B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12CBDADF2128ED920027B13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -92,6 +102,7 @@
 		126C37592129017D003C1CD4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12ACF9112129A4A400314F7F /* Availability.swift */,
 				126C376121290626003C1CD4 /* Enums */,
 				126C375A2129018A003C1CD4 /* Experience.swift */,
 			);
@@ -117,6 +128,7 @@
 		126C376821291544003C1CD4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				12ACF9132129A4DB00314F7F /* UIView.swift */,
 				126C376921291559003C1CD4 /* UIColor.swift */,
 				12ACF90F21296A2900314F7F /* UIImageView.swift */,
 			);
@@ -163,6 +175,8 @@
 		12CBDAEF2128EEF60027B13B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				12ACF9192129A93C00314F7F /* SuccessController.swift */,
+				12ACF9172129A85B00314F7F /* CheckOutController.swift */,
 				126C375421290021003C1CD4 /* HomeViewController.swift */,
 				1387866421293D530087B3F8 /* CategoryController.swift */,
 				12ACF90D2129593000314F7F /* ProductDetailsViewController.swift */,
@@ -173,6 +187,7 @@
 		12CBDAF02128F0C20027B13B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				12ACF9152129A5E800314F7F /* CheckOut.storyboard */,
 				1387865F21293BC40087B3F8 /* Category.storyboard */,
 				12CBDADE2128ED920027B13B /* Home.storyboard */,
 				12ACF90B2129531500314F7F /* ProductDetails.storyboard */,
@@ -260,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12ACF9162129A5E800314F7F /* CheckOut.storyboard in Resources */,
 				12ACF90C2129531500314F7F /* ProductDetails.storyboard in Resources */,
 				1387866021293BC40087B3F8 /* Category.storyboard in Resources */,
 				12CBDAE82128ED940027B13B /* LaunchScreen.storyboard in Resources */,
@@ -314,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12ACF9182129A85B00314F7F /* CheckOutController.swift in Sources */,
 				126C3760212903D2003C1CD4 /* APIManager.swift in Sources */,
 				1387866521293D540087B3F8 /* CategoryController.swift in Sources */,
 				12CBDADB2128ED920027B13B /* AppDelegate.swift in Sources */,
@@ -325,10 +342,13 @@
 				12ACF91021296A2900314F7F /* UIImageView.swift in Sources */,
 				126C375B2129018A003C1CD4 /* Experience.swift in Sources */,
 				1387867621294EAD0087B3F8 /* CategoriesCollectionViewCell.swift in Sources */,
+				12ACF9122129A4A400314F7F /* Availability.swift in Sources */,
 				126C376A21291559003C1CD4 /* UIColor.swift in Sources */,
 				126C375521290021003C1CD4 /* HomeViewController.swift in Sources */,
+				12ACF91A2129A93D00314F7F /* SuccessController.swift in Sources */,
 				126C376321290635003C1CD4 /* Errors.swift in Sources */,
 				13878667212946610087B3F8 /* DateTableViewCell.swift in Sources */,
+				12ACF9142129A4DB00314F7F /* UIView.swift in Sources */,
 				1387866221293C840087B3F8 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

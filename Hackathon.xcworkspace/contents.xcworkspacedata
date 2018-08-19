@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/seongeunkim/Desktop/HackMovile/Hackathon/Model/Availability.swift">
+   </FileRef>
+   <FileRef
       location = "group:Hackathon.xcodeproj">
    </FileRef>
    <FileRef

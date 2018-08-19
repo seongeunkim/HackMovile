@@ -68,10 +68,12 @@
                                                 <state key="normal" title="Reservar experiência">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="wDD-9V-G3t" kind="show" identifier="toCheckout" id="Yn6-dl-ajk"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vozinha" translatesAutoresizingMaskIntoConstraints="NO" id="ScI-22-aXg">
                                                 <rect key="frame" x="30" y="300" width="88" height="88"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ScI-22-aXg" secondAttribute="height" multiplier="1:1" id="9It-LK-LTJ"/>
                                                     <constraint firstAttribute="width" constant="88" id="yTL-Om-BVp"/>
@@ -128,11 +130,20 @@
                         <outlet property="nameLabel" destination="zbZ-ea-3rq" id="nhw-Yc-1Ue"/>
                         <outlet property="priceLabel" destination="MTd-B7-bku" id="a8m-bT-YSn"/>
                         <outlet property="profileImage" destination="ScI-22-aXg" id="hcH-cg-wvC"/>
+                        <outlet property="reserveButton" destination="Lej-Ol-aoe" id="acw-Px-kya"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mL-0K-EBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1460" y="-111.0944527736132"/>
+        </scene>
+        <!--CheckOut-->
+        <scene sceneID="Q2s-NR-IFA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CheckOut" id="wDD-9V-G3t" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3x-dA-iVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="-83"/>
         </scene>
     </scenes>
     <resources>
