@@ -28,22 +28,3 @@ class CategoryTableViewCell: UITableViewCell {
         thumb.load(url: "https://st.depositphotos.com/1226177/4047/v/950/depositphotos_40477545-stock-illustration-pop-art-comic-speech-bubble.jpg")
     }
 }
-
-extension UIImageView {
-    func load(url: String) {
-         do {
-            let _url  = try url.asURL()
-            DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: _url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-            }
-         } catch{
-            print("error load image")
-        }
-    }
-}
