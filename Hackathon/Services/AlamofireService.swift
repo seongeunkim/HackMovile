@@ -11,9 +11,8 @@ import Alamofire
 
 class AlamofireService {
     
-    static func getJsonFromHttp(completion: @escaping(Any?, Errors?) -> Void) {
-        let todoEndpoint: String = "http://192.168.25.43:3000/experiences/"
-        Alamofire.request(todoEndpoint)
+    static func getJsonFromHttp(endpoint: String, completion: @escaping(Any?, Errors?) -> Void) {
+        Alamofire.request(endpoint)
             .responseJSON { response in
                 // check for errors
                 guard response.result.error == nil else {
