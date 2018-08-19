@@ -29,6 +29,18 @@ class APIManager {
         }
     }
     
+    static func getHomeDetails(completion: @escaping ([String: Any]?, Errors?) -> Void) {
+        AlamofireService.getJsonFromHttp(url: "\(API)/home/") { (json, error) in
+            if error != nil {
+                completion(nil, error)
+                return
+            }
+            guard let result = json as? [String:Any] else {
+                completion(nil, .JsonParseError)
+                return
+            }
+            completion(result, nil)
+
     static func getAvailabilities(completion: @escaping ([Availability]?, Errors?) -> Void) {
         AlamofireService.getJsonFromHttp(endpoint:"\(API)/home/") { (json, error) in
             if (error != nil) {

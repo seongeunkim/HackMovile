@@ -18,12 +18,14 @@ class CategoryController: UIViewController, UITableViewDataSource, UITableViewDe
     
     private var experiences: [Experience] = []
     
+    var imageURL: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadIndicator.startAnimating()
         self.loadIndicator.hidesWhenStopped = true
         self.numExpLabel.text = ""
-        imageHeader.load(url: "https://st.depositphotos.com/1226177/4047/v/950/depositphotos_40477545-stock-illustration-pop-art-comic-speech-bubble.jpg")
+        imageHeader.load(url: imageURL!)
         APIManager.getExperiences { (experiences, errors) in
             if let experiences = experiences {
                 self.experiences = experiences
@@ -40,8 +42,6 @@ class CategoryController: UIViewController, UITableViewDataSource, UITableViewDe
             let index = categoryTable.indexPath(for: cell)!.row
             if segue.identifier == "toDetails" {
                 let vc = segue.destination as! ProductDetailsViewController
-                //vc.name = self.experiences[index].title
-                //vc.nameLabel.text = self.experiences[index].title
                 vc.selectedExperience = self.experiences[index]
             }
         }
