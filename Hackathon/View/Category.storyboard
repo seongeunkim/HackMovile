@@ -112,6 +112,7 @@
                                             <outlet property="price" destination="Ne2-fi-D7p" id="FaO-dn-ZqP"/>
                                             <outlet property="thumb" destination="sbv-xj-qGa" id="dj2-T7-BUU"/>
                                             <outlet property="title" destination="Twz-pP-vbH" id="SFY-8Y-THV"/>
+                                            <segue destination="P9A-1t-Nd8" kind="show" identifier="toDetails" id="8Kb-92-EFq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -162,6 +163,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9a-K2-k4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="266.39999999999998" y="-91.304347826086968"/>
+        </scene>
+        <!--ProductDetails-->
+        <scene sceneID="dXl-zI-efv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductDetails" id="P9A-1t-Nd8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Dx-Ji-4qC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="-92"/>
         </scene>
     </scenes>
 </document>
