@@ -27,7 +27,7 @@ class CategoryTableViewCell: UITableViewCell {
         
         title.text = experience.title
         local.text = "Onde: \(experience.city),\(experience.state)"
-        price.text = String(format: "R$ %.02f por pessoa", experience.price)
-        thumb.load(url: "https://st.depositphotos.com/1226177/4047/v/950/depositphotos_40477545-stock-illustration-pop-art-comic-speech-bubble.jpg")
+        price.text = experience.price
+        thumb.load(url: experience.image)
     }
 }
