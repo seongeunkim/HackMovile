@@ -13,6 +13,9 @@
 		126C3760212903D2003C1CD4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C375F212903D2003C1CD4 /* APIManager.swift */; };
 		126C376321290635003C1CD4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C376221290635003C1CD4 /* Errors.swift */; };
 		126C376A21291559003C1CD4 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126C376921291559003C1CD4 /* UIColor.swift */; };
+		12ACF90C2129531500314F7F /* ProductDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12ACF90B2129531500314F7F /* ProductDetails.storyboard */; };
+		12ACF90E2129593000314F7F /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF90D2129593000314F7F /* ProductDetailsViewController.swift */; };
+		12ACF91021296A2900314F7F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ACF90F21296A2900314F7F /* UIImageView.swift */; };
 		12CBDADB2128ED920027B13B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CBDADA2128ED920027B13B /* AppDelegate.swift */; };
 		12CBDAE02128ED920027B13B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CBDADE2128ED920027B13B /* Home.storyboard */; };
 		12CBDAE32128ED920027B13B /* Hackathon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12CBDAE12128ED920027B13B /* Hackathon.xcdatamodeld */; };
@@ -35,6 +38,9 @@
 		126C375F212903D2003C1CD4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		126C376221290635003C1CD4 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		126C376921291559003C1CD4 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		12ACF90B2129531500314F7F /* ProductDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductDetails.storyboard; sourceTree = "<group>"; };
+		12ACF90D2129593000314F7F /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		12ACF90F21296A2900314F7F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		12CBDAD72128ED920027B13B /* Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CBDADA2128ED920027B13B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12CBDADF2128ED920027B13B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				126C376921291559003C1CD4 /* UIColor.swift */,
+				12ACF90F21296A2900314F7F /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 			children = (
 				126C375421290021003C1CD4 /* HomeViewController.swift */,
 				1387866421293D530087B3F8 /* CategoryController.swift */,
+				12ACF90D2129593000314F7F /* ProductDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			children = (
 				1387865F21293BC40087B3F8 /* Category.storyboard */,
 				12CBDADE2128ED920027B13B /* Home.storyboard */,
+				12ACF90B2129531500314F7F /* ProductDetails.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12ACF90C2129531500314F7F /* ProductDetails.storyboard in Resources */,
 				1387866021293BC40087B3F8 /* Category.storyboard in Resources */,
 				12CBDAE82128ED940027B13B /* LaunchScreen.storyboard in Resources */,
 				12CBDAE52128ED940027B13B /* Assets.xcassets in Resources */,
@@ -307,10 +317,12 @@
 				126C3760212903D2003C1CD4 /* APIManager.swift in Sources */,
 				1387866521293D540087B3F8 /* CategoryController.swift in Sources */,
 				12CBDADB2128ED920027B13B /* AppDelegate.swift in Sources */,
+				12ACF90E2129593000314F7F /* ProductDetailsViewController.swift in Sources */,
 				12CBDAE32128ED920027B13B /* Hackathon.xcdatamodeld in Sources */,
 				1387867421294EAD0087B3F8 /* FeaturedHeaderTableViewCell.swift in Sources */,
 				126C37582129006A003C1CD4 /* AlamofireService.swift in Sources */,
 				1387867521294EAD0087B3F8 /* FeaturedTableViewCell.swift in Sources */,
+				12ACF91021296A2900314F7F /* UIImageView.swift in Sources */,
 				126C375B2129018A003C1CD4 /* Experience.swift in Sources */,
 				1387867621294EAD0087B3F8 /* CategoriesCollectionViewCell.swift in Sources */,
 				126C376A21291559003C1CD4 /* UIColor.swift in Sources */,

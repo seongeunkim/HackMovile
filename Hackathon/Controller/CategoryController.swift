@@ -35,6 +35,18 @@ class CategoryController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell = sender as? UITableViewCell {
+            let index = categoryTable.indexPath(for: cell)!.row
+            if segue.identifier == "toDetails" {
+                let vc = segue.destination as! ProductDetailsViewController
+                //vc.name = self.experiences[index].title
+                //vc.nameLabel.text = self.experiences[index].title
+                vc.selectedExperience = self.experiences[index]
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.experiences.count
     }
@@ -50,16 +62,7 @@ class CategoryController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
         
-        if let cell = tableView.cellForRow(at: indexPath as IndexPath) {
-            if cell.accessoryType == .checkmark{
-                cell.accessoryType = .none
-            }
-            else{
-                cell.accessoryType = .checkmark
-            }
-        }
     }
     
     
